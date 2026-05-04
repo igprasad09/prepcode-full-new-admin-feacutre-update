@@ -27,7 +27,7 @@ export default function Dashboard() {
   // 1. Fetch all programs
   useEffect(() => {
     axios
-      .get("https://backend-nine-red-85.vercel.app/programs")
+      .get("http://localhost:3000/programs")
       .then((res) => {
         setAllprograms(res.data.programs);
         // setLoading(false) is handled in .finally() to ensure it runs even on error
